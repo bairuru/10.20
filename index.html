@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+    <title></title>
+    <link rel="stylesheet" href="Content/css/bootstrap.min.css">
+    <link rel="stylesheet" href="Content/css/reset.css">
+    <link rel="stylesheet" href="Content/css/common.css">
+    <link rel="stylesheet" href="Content/css/font-awesome.min.css">
+    <link rel="stylesheet" href="Content/css/swiper.min.css">
+    <link rel="stylesheet" href="Content/css/style.css">
+</head>
+<body ng-app="app">
+<header class="header">
+    <ul class="tabs">
+        <li class="col-xs-6 text-right" ng-class="{on:flag}"ng-click="changeFlag()"><a class="on" ng-href="#/server">服务</a></li>
+        <li class="col-xs-6 text-left"><a ng-href="#/banking">金融</a></li>
+        <li class="search"><i class="fa fa-search"></i></li>
+    </ul>
+</header>
+<section class="content">
+    <ui-view></ui-view>
+</section>
+<footer class="footer">
+    <div class="col-xs-3">
+        <i class="fa fa-home"></i>
+        <span>首页</span>
+    </div>
+    <div class="col-xs-3">
+        <i class="fa fa-search"></i>
+        <span>论坛</span>
+    </div>
+    <div class="col-xs-3 on">
+        <i class="fa fa-car"></i>
+        <span>选车</span>
+    </div>
+    <div class="col-xs-3">
+        <i class="fa fa-user"></i>
+        <span>未登录</span>
+    </div>
+</footer>
+
+<script type="text/javascript" src="Script/jquery/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="Script/swiper/swiper-3.3.1.min.js"></script>
+<script type="text/javascript" src="Script/iscroll/iscroll.js"></script>
+<script type="text/javascript" src="Script/angular/angular.min.js"></script>
+<script type="text/javascript" src="Script/angular-ui/angular-ui-router.min.js"></script>
+<script type="text/javascript" src="App/app.js"></script>
+<script type="text/javascript" src="App/Service/baseServer.js"></script>
+<script type="text/javascript" src="App/Service/carServer.js"></script>
+<script type="text/javascript" src="App/Directive/serverDirective.js"></script>
+<script type="text/javascript" src="App/Directive/bankingDirective.js"></script>
+<script type="text/javascript" src="App/Controller/serverController.js"></script>
+<script type="text/javascript" src="App/Controller/bankingController.js"></script>
+<script type="text/javascript">
+    $('.tabs').on('click','li',function(){
+        $(this).find('a').addClass('on');
+        $(this).siblings().find('a').removeClass('on');
+    })
+
+
+
+</script>
+
+</body>
+</html>

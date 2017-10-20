@@ -1,0 +1,259 @@
+body {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  width: 100%;
+  display: -webkit-flex;
+  -webkit-flex-direction: column; }
+
+.header {
+  height: 0.4rem; }
+  .header .tabs {
+    position: relative; }
+    .header .tabs li {
+      line-height: 0.4rem;
+      font-size: 0.16rem; }
+      .header .tabs li a {
+        color: #bbb;
+        padding-left: 0.05rem;
+        padding-right: 0.05rem; }
+      .header .tabs li a.on {
+        display: inline-block;
+        line-height: 0.36rem;
+        border-bottom: 2px solid #333;
+        color: #333; }
+    .header .tabs .search {
+      position: absolute;
+      right: 0.15rem; }
+
+.content {
+  -webkit-flex: 1;
+  overflow-y: scroll;
+  background: #eee; }
+
+.banner {
+  height: 1.3rem; }
+  .banner .swiper-wrapper {
+    width: 100%; }
+    .banner .swiper-wrapper .swiper-slide {
+      width: 100%; }
+      .banner .swiper-wrapper .swiper-slide img {
+        width: 100%; }
+
+.list {
+  background: #fff;
+  padding-top: 0.15rem;
+  padding-bottom: 0.12rem; }
+  .list dl {
+    text-align: center; }
+    .list dl dt {
+      width: 0.4rem;
+      height: 0.4rem;
+      line-height: 0.4rem;
+      border-radius: 15px;
+      margin-left: auto;
+      margin-right: auto; }
+      .list dl dt > i {
+        font-size: 0.2rem;
+        color: #fff; }
+    .list dl dd {
+      font-size: 0.12rem;
+      padding-top: 0.06rem; }
+
+.logo img {
+  width: 100%; }
+
+.produce-list {
+  background: #fff; }
+  .produce-list h3 {
+    height: 0.5rem;
+    line-height: 0.5rem;
+    font-size: 0.16rem;
+    padding-left: 0.15rem; }
+  .produce-list .icons {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
+    .produce-list .icons li {
+      width: 25%;
+      height: 0.8rem;
+      border-bottom: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      text-align: center;
+      padding-top: 0.15rem; }
+      .produce-list .icons li > i {
+        font-size: 0.28rem; }
+      .produce-list .icons li span {
+        padding-top: 0.08rem;
+        display: block;
+        font-size: 0.12rem; }
+    .produce-list .icons li:nth-child(4n) {
+      border-right: none; }
+    .produce-list .icons li:nth-child(1), .produce-list .icons li:nth-child(2), .produce-list .icons li:nth-child(3), .produce-list .icons li:nth-child(4) {
+      border-top: 1px solid #ccc; }
+
+.scroll {
+  background: #fff; }
+  .scroll .tit {
+    position: relative; }
+    .scroll .tit h3 {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      font-size: 0.16rem;
+      padding-left: 0.15rem; }
+    .scroll .tit .time {
+      position: absolute;
+      right: 0.03rem;
+      top: 0.16rem; }
+      .scroll .tit .time span {
+        background: #444;
+        color: #fff;
+        padding: 0.01rem 0.03rem;
+        margin-left: 0.03rem;
+        margin-right: 0.03rem; }
+  .scroll .iscroll {
+    width: 100%;
+    height: 1.5rem;
+    overflow: hidden;
+    background: #fff;
+    position: relative; }
+    .scroll .iscroll .scroll-list {
+      width: 1250px;
+      height: 1.4rem; }
+      .scroll .iscroll .scroll-list li {
+        width: 1.4rem;
+        border: 1px solid #ccc;
+        margin-left: 0.15rem;
+        float: left; }
+        .scroll .iscroll .scroll-list li dl dt img {
+          width: 100%; }
+        .scroll .iscroll .scroll-list li dl dd {
+          padding-top: 0.1rem;
+          padding-left: 0.06rem; }
+          .scroll .iscroll .scroll-list li dl dd h4 {
+            font-size: 0.14rem; }
+          .scroll .iscroll .scroll-list li dl dd p {
+            height: 0.34rem;
+            line-height: 0.34rem; }
+            .scroll .iscroll .scroll-list li dl dd p span {
+              color: #FB5401;
+              font-size: 0.13rem; }
+            .scroll .iscroll .scroll-list li dl dd p s {
+              color: #666;
+              font-size: 0.1rem;
+              margin-left: 0.2rem; }
+
+.active {
+  background: #fff; }
+  .active .tit {
+    position: relative; }
+    .active .tit h3 {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      font-size: 0.16rem;
+      padding-left: 0.15rem; }
+    .active .tit .more {
+      position: absolute;
+      right: 0.15rem;
+      top: 0.15rem;
+      color: #777; }
+      .active .tit .more span {
+        font-size: 0.13rem;
+        padding-right: 0.1rem; }
+      .active .tit .more > i {
+        font-size: 0.24rem;
+        vertical-align: sub; }
+  .active .dls li {
+    border-top: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    padding-bottom: 0.1rem; }
+    .active .dls li dl dd h4 {
+      padding-top: 0.1rem;
+      font-size: 0.14rem; }
+    .active .dls li dl dd p {
+      padding-top: 0.06rem;
+      font-size: 0.12rem;
+      color: #FB5401; }
+    .active .dls li dl dt {
+      padding-top: 0.1rem; }
+      .active .dls li dl dt img {
+        width: 100%; }
+  .active .dls li:nth-child(3) {
+    border-right: none; }
+
+.like {
+  background: #fff; }
+  .like .tit {
+    position: relative; }
+    .like .tit h3 {
+      height: 0.5rem;
+      line-height: 0.5rem;
+      font-size: 0.16rem;
+      padding-left: 0.15rem; }
+    .like .tit .more {
+      position: absolute;
+      right: 0.15rem;
+      top: 0.15rem;
+      color: #777; }
+      .like .tit .more span {
+        font-size: 0.13rem;
+        padding-right: 0.1rem; }
+      .like .tit .more > i {
+        font-size: 0.24rem;
+        vertical-align: sub; }
+  .like .car-list {
+    display: -webkit-flex;
+    -webkit-flex-wrap: wrap; }
+    .like .car-list li {
+      width: 50%;
+      box-sizing: border-box;
+      border-top: 1px solid #ccc;
+      border-right: 1px solid #ccc;
+      padding-bottom: 0.1rem;
+      padding-top: 0.1rem; }
+      .like .car-list li dl {
+        padding-left: 0.1rem;
+        padding-right: 0.1rem; }
+        .like .car-list li dl dd h4 {
+          padding-top: 0.1rem;
+          padding-bottom: 0.1rem;
+          font-size: 0.14rem; }
+        .like .car-list li dl dd p {
+          color: #ababab;
+          font-size: 0.12rem; }
+        .like .car-list li dl dd p:last-child {
+          padding-top: 0.1rem; }
+          .like .car-list li dl dd p:last-child b {
+            padding-right: 0.1rem;
+            font-weight: normal;
+            color: #FB5401; }
+        .like .car-list li dl dt {
+          height: 0.85rem;
+          padding-top: 0.08rem;
+          padding-bottom: 0.12rem; }
+          .like .car-list li dl dt img {
+            width: 100%; }
+
+.btn {
+  width: 100%; }
+  .btn button {
+    background: #eee;
+    margin-left: auto;
+    margin-right: auto; }
+
+.footer {
+  height: 0.5rem;
+  background: #FBFBFB; }
+  .footer div.on {
+    color: #4183FF; }
+  .footer div {
+    text-align: center;
+    padding-top: 0.06rem; }
+    .footer div > i {
+      font-size: 0.2rem; }
+    .footer div span {
+      padding-top: 0.02rem;
+      display: block;
+      font-size: 0.12rem; }
+
+/*# sourceMappingURL=style.css.map */
